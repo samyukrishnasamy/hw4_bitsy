@@ -43,7 +43,7 @@ w,0,0,0,0,0,0,d,d,d,0,0,0,0,0,w
 w,0,0,0,0,0,0,d,0,d,0,0,0,0,0,w
 w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w
 NAME disco room
-EXT 15,7 0 15,7 FX wave
+EXT 15,7 1 15,7 FX wave DLG c
 PAL 0
 TUNE 1
 
@@ -66,6 +66,7 @@ w,0,0,0,0,0,0,0,0,0,0,0,0,0,0,w
 w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w
 NAME club entrance
 ITM 1 15,5
+EXT 15,7 0 15,7 FX wave DLG d
 PAL 0
 
 TIL w
@@ -365,6 +366,22 @@ DANCE!!!!
 """
 NAME exit narration 1
 
+DLG c
+"""
+YOU ENTER THE CLUB...
+
+ARE YOU READY TO...
+DANCE!!!!!!
+"""
+NAME exit narration 2
+
+DLG d
+"""
+ARE YOU READY TO...
+DANCE!!!!!
+"""
+NAME exit narration 3
+
 TUNE 1
 s,0,m,0,l,0,s,0,l,0,0,l,0,s,m,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -381,6 +398,13 @@ KEY C,D,E,F,G,A,B d,r,m,f,s,l,t
 TMP XFST
 SQR P8 P2
 ARP INT5
+
+BLIP 1
+G5,A#5,F#5
+NAME pick up 1
+ENV 116 75 6 101 94
+BEAT 65 0
+SQR P4
 
 
 </script>
